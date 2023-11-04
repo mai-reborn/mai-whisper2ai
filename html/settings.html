@@ -1,0 +1,56 @@
+<section id="imai-settings-container" class="cmai-settings-container">
+    <h2 class="cmai-settings-title" id="imai-settings-title-label">Ustawienia</h2>
+
+    <article class="cmai-settings-field">
+        <label for="imai-cfg-openai-api-key" class="cmai-settings-label" id="imai-cfg-openai-api-key-label">Klucz OpenAI API:</label>
+        <input type="text" id="imai-cfg-openai-api-key" class="cmai-settings-input">
+    </article>
+
+    <article class="cmai-settings-field">
+        <label for="imai-cfg-voice2text-mode" class="cmai-settings-label" id="imai-cfg-voice2text-mode-label">Metoda transkrypcji głosu:</label>
+        <select id="imai-cfg-voice2text-mode" class="cmai-settings-input">
+            <option value="whisper">Whisper model (OpenAI)</option>
+            <option value="webkit">webkitSpeechRecognition</option>
+        </select>
+    </article>
+
+    <article class="cmai-settings-field">
+        <label for="imai-cfg-tts-language" class="cmai-settings-label" id="imai-cfg-tts-language-label">Język w którym toczy się rozmowa</label>
+        <select id="imai-cfg-tts-language" class="cmai-settings-select">
+        </select>
+    </article>
+
+    <article class="cmai-settings-field">
+        <label for="imai-cfg-tts-rate" class="cmai-settings-label" id="imai-cfg-tts-rate-label">Szybkość mowy:</label>
+        <input type="number" id="imai-cfg-tts-rate" min="0.5" max="2" step="0.1" value="1" class="cmai-settings-input">
+    </article>
+
+    <article class="cmai-settings-field">
+        <label for="imai-cfg-tts-pitch" class="cmai-settings-label" id="imai-cfg-tts-pitch-label">Wysokość głosu:</label>
+        <input type="number" id="imai-cfg-tts-pitch" min="0.5" max="2" step="0.1" value="1" class="cmai-settings-input">
+    </article>
+
+    <article class="cmai-settings-field">
+        <input type="checkbox" id="imai-cfg-tts-ignore-codeblocks">&nbsp;
+        <label for="imai-cfg-tts-ignore-codeblocks" id="imai-cfg-tts-ignore-codeblocks-label">Ignoruj bloki kodu:</label>
+    </article>
+
+    <article class="cmai-settings-field">
+        <input type="checkbox" id="imai-cfg-stt-autosend-text-prompt">&nbsp; 
+        <label for="imai-cfg-stt-autosend-text-prompt" id="imai-cfg-stt-autosend-text-prompt-label">Wyślij automatycznie po zakończeniu transkrypcji głosu:</label>
+    </article>
+
+    <article class="cmai-settings-field">
+        <input type="checkbox" id="imai-cfg-show-btn-descriptions">&nbsp; 
+        <label for="imai-cfg-show-btn-descriptions" id="imai-cfg-show-btn-descriptions-label">Pokazuj opisy przycisków interfejsu po najechaniu kursorem</label>
+    </article>
+    
+    <div id="imai-cfg-error-message" class="cmai-error-message"></div>
+
+    <div class="cmai-settings-actions">
+        <button id="imai-cfg-settings-save" class="cmai-settings-button">Zapisz</button>
+        <button id="imai-cfg-settings-cancel" class="cmai-settings-button">Anuluj</button>
+    </div>
+    
+</section>
+<div id="cmai-overlay"></div>

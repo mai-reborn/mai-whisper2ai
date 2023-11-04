@@ -1,0 +1,44 @@
+  {
+    "manifest_version": 3,
+    "name": "mai_ | Whisper to ChatGPT and Claude.ai",
+    "version": "1.0.0",
+    "description": "The extension enables voice interaction with ChatGPT and Claude.ai in the Chrome browser and other browsers based on Chromium. It allows for the use of the AI model Whisper developed by OpenAI for speech-to-text transcription. You can also use the transcription method built into the browser  (webkitSpeechRecognition)",
+
+	"content_scripts":[
+		{
+			"matches":[
+				"https://chat.openai.com/*",
+                "https://claude.ai/*"
+			],
+			"js": ["js/jquery-3.7.1.min.js", "js/MAILogger.js", "js/MAII18nService.js", "js/MAITextToSpeech.js", "js/MAISpeechToText.js", "js/MAIPageAdapterManager.js", "js/MAIPageAdapter.js", "js/MAIChatGPTAdapter.js", "js/MAIClaudeAiAdapter.js", "js/MAISpeechToTextInterface.js", "js/MAIWebkitSpeechToText.js", "js/MAIWhisperSpeechToText.js", "js/MAISpeechToText.js", "js/MAISettings.js", "js/MAIInterface.js", "js/control.js"], 
+            "css": ["css/styles.css"]
+		}
+	],
+
+    "background": {
+        "service_worker": "js/background.js"
+    },
+
+    "web_accessible_resources": [
+        {
+            "resources": ["css/*.css", "html/*.html", "translations/*.json"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    
+    "action": {
+      "default_popup": "html/popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+  

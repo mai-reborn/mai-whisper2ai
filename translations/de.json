@@ -1,0 +1,62 @@
+{
+    "button.save": "Speichern",
+    "button.submit": "Absenden",
+    "button.cancel": "Abbrechen",
+    "button.close": "Schließen",
+
+    "button.rec.on": "Klicken und sprechen",
+    "button.rec.off": "Mikrofon aus",
+    "button.rec.transcription": "Transkription von Sprache zu Text",
+    "button.tts.on": "Automatisches Lesen von Chat-Antworten aktiviert, klicken Sie, wenn Sie diese Funktion deaktivieren möchten",
+    "button.tts.off": "Automatisches Antwortlesen deaktiviert, klicken Sie, wenn Sie diese Funktion aktivieren möchten",
+    "button.tts.all.on": "Klicken Sie, um den gesamten Thread von Anfang an oder den ausgewählten Textauszug zu lesen, doppelklicken Sie, um den letzten Eintrag im Thread zu lesen.",
+    "button.tts.pause": "Pause - klicken, um das Lesen zu stoppen",
+    "button.settings": "Plugin-Einstellungen bearbeiten... \n\n[aktuelle Einstellungen]:\n",
+
+    "button.rec.on.title": "Klicken und sprechen",
+    "button.rec.off.title": "Mikrofon aus",
+    "button.rec.transcription.title": "Transkription der Sprache",
+    "button.tts.on.title": "Chat-Antwort laut vorlesen",
+    "button.tts.off.title": "Automatisches Antwortlesen ist deaktiviert, klicken Sie zum Aktivieren",
+    "button.tts.all.on.title": "Den gesamten Thread laut lesen",
+    "button.tts.pause.title": "Lesen pausieren/fortsetzen (TTS)",
+    "button.settings.title": "Einstellungen öffnen",
+
+
+    "settings.title": "Einstellungen",
+    "settings.opeanai.apikey": "OpenAI API-Schlüssel (erforderlich für die Transkription mit der Whisper-Methode)",
+    "settings.voice2text.mode": "Sprache-zu-Text-Transkriptionsmethode",
+    "settings.language": "Sprache des Gesprächs",
+    "settings.tts.rate": "Sprechgeschwindigkeit",
+    "settings.tts.pitch": "Stimmhöhe",
+    "settings.ignore.codeblocks": "Codeblöcke ignorieren",
+    "settings.stt.autosend": "Automatisch senden nach Sprachtranskription",
+    "settings.button.descriptions": "Beschreibungen der Tasten anzeigen",
+
+    "status.init": "Plugin-Initialisierung läuft...",
+    "status.standby":  "Warte auf Befehle",
+    "status_rec.on": "Tonaufnahme läuft",
+    "status.transcription.in.progress": "Tonaufnahme-Transkription läuft...",
+    "status.tts.on": "Text-zu-Sprache läuft",
+    "status.tts.all.on": "Text-zu-Sprache des gesamten Threads läuft",
+    "status_tts_pause": "Pause aktiviert",
+
+    "status.init.title": "Initialisierung läuft",
+    "status.init.mic.on": "Mikrofon: eingeschaltet",
+    "status.init.mic.off": "Mikrofon: ausgeschaltet",
+    "status.init.settings.loaded": "Einstellungen geladen",
+    "status.init.tts.ready": "TTS bereit",
+    "status.init.tts.on": "TTS: eingeschaltet",
+    "status.init.tts.off": "TTS: ausgeschaltet",
+    "status.init.pageadapter.ready": "PageAdapter bereit",
+    "status.init.lang": "Sprache",
+    "status.init.voice": "Stimme",
+    "status.init.stt.method": "Sprache-zu-Text",
+
+    "message.webkit.unavailable" : "Die in den Einstellungen gewählte Sprache-zu-Text-Methode ('webkit') wird in Ihrem Browser nicht unterstützt (funktioniert jedoch in Chrome). Sie können die Methode auf 'whisper' ändern - dies wird Ihnen auch eine bessere Transkriptionsqualität bieten (mit korrekter Interpunktion). Mehr dazu können Sie erfahren, indem Sie auf Info klicken (in der unteren rechten Ecke des Plugins)",
+    "message.error.closebtn": "[Nachricht schließen]",
+
+    "app.title.chatgpt": "Whisper zu ChatGPT",
+    "app.title.claude": "Whisper zu Claude",
+    "app.version": "Version"
+}

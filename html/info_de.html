@@ -1,0 +1,292 @@
+<section id="imai-info-container" class="cmai-info-container">
+    <h2 class="cmai-info-title" id="imai-info-title-label">mai_ | Whisper to ChatGPT and Claude.ai</h2>
+    <p>Die Erweiterung ermöglicht Sprachinteraktion mit ChatGPT und Claude.ai im Chrome-Browser und anderen
+        auf Chromium basierenden Browsern (z.B. Edge). Sie ermöglicht die Verwendung des von OpenAI entwickelten AI-Modells "Whisper" für
+        Sprache-zu-Text-Transkription. Sie können auch die in den Browser integrierte Transkriptionsmethode
+        (webkitSpeechRecognition) verwenden.
+        Die Erweiterung wird angezeigt und funktioniert beim Besuch von <a href="https://chat.openai.com">chat.openai.com</a>
+        oder <a href="https://claude.ai">claude.ai</a>
+    </p>
+
+    <br>
+
+
+    <p>
+        Scrollen Sie nach unten, um mehr zu erfahren...
+    </p>
+
+    <article>
+        <section>
+            <h2>Programmfunktionen</h2>
+            <ol>
+                <li>
+                    <p>Sie können mit dem Chat sprechen, indem Sie ins Mikrofon sprechen, und seine Antworten
+                        werden laut vorgelesen</p>
+                </li>
+                <li>
+                    <p>Sie können eine Option aktivieren, die Ihr gesamtes Chat-Gespräch laut vorliest,
+                        oder nur die letzte Antwort laut vorliest</p>
+                </li>
+                <li>
+                    <p>Sie können einen Textabschnitt im Chat-Thread markieren und eine Funktion aktivieren, die diesen
+                        Abschnitt laut vorliest</p>
+                </li>
+                <li>
+                    <p>In der Erweiterungskonfiguration können Sie Sprachparameter festlegen, einschließlich der
+                        Sprache, in der Sie
+                        mit dem Chat sprechen, Stimme, Stimmhöhe und Lesegeschwindigkeit, Sprachtranskriptionsmethode
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+
+
+
+
+
+        <section>
+            <h2>Benutzeroberfläche</h2>
+            <table>
+                <tr>
+                    <td>
+                        <button class="cmai-btn" style="display: inline-block; visibility: visible;"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="M480-420.001q-41.922 0-70.961-29.038-29.038-29.039-29.038-70.961v-240q0-41.922 29.038-70.961 29.039-29.038 70.961-29.038t70.961 29.038q29.038 29.039 29.038 70.961v240q0 41.922-29.038 70.961-29.039 29.038-70.961 29.038Zm-29.999 290v-131.847q-99-11.307-164.5-84.922T220.001-520H280q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h59.999q0 99.615-65.5 173.23t-164.5 84.922v131.847h-59.998Z" />
+                            </svg>
+                        </button>
+                    </td>
+
+                    <td>
+                        Klicken Sie und diktieren Sie Ihre Frage mit Hilfe der Sprache-zu-Text-Technologie. Das Symbol
+                        ändert die Farbe zu
+                        Rot während der Sprachaufnahme. Klicken Sie erneut, um die Sprachaufnahme zu beenden und
+                        die Sprache in Text zu konvertieren. Wählen Sie Ihre bevorzugte Transkriptionsmethode in den
+                        Erweiterungseinstellungen
+                        aus. Details zu den verfügbaren Methoden <a href="#imai-ainfo-stt-section">finden Sie
+                            unten</a>.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button class="cmai-btn" style="display: inline-block; visibility: visible;"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="m689.614-392.771-44.153-44.923q9.769-17.23 15.038-38.191 5.269-20.961 5.269-44.115h59.999q0 37.076-9.538 68.499-9.539 31.422-26.615 58.73Zm-128.77-130.001L365.77-718.616V-760q0-41.922 29.038-70.961 29.038-29.038 70.96-29.038 41.923 0 70.961 29.038 29.038 29.039 29.038 70.961v213.844q0 6.769-1.539 12.307-1.538 5.539-3.384 11.077ZM435.769-130.001v-131.693q-99-11.692-164.5-85.191Q205.77-420.385 205.77-520h59.998q0 83 58.5 141.5t141.5 58.5q38.616 0 72.578-13.769 33.961-13.77 60.115-38.155l42.769 42.768q-29 27.231-66.001 44.847-37 17.615-79.462 22.615v131.693h-59.998Zm358.924 38.614L67.155-818.925l42.152-42.153L836.845-133.54l-42.152 42.153Z" />
+                            </svg>
+                        </button>
+                    </td>
+
+                    <td style="vertical-align: middle;">
+                        Mikrofon ist ausgeschaltet - Funktion "Sprache-zu-Text" ist nicht verfügbar.
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <button class="cmai-btn" style="display: inline-block; visibility: visible;"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="M561.539-155.617v-61.999q86.538-27.538 139.422-100Q753.846-390.077 753.846-481q0-90.923-52.885-163.384-52.884-72.462-139.422-100v-61.999Q673.23-776.46 743.537-686.46q70.307 89.999 70.307 205.46 0 115.461-70.307 205.46-70.307 90-181.998 119.923ZM146.156-380.001v-199.998h148.46l171.537-171.536v543.07L294.616-380.001h-148.46Zm415.383 46.154v-294.306q40.461 22 62.537 61.961Q646.153-526.23 646.153-480q0 45.615-22.269 84.884t-62.345 61.269Z" />
+                            </svg>
+                        </button>
+                    </td>
+
+                    <td>
+                        Wenn diese Option aktiviert ist, wird die erscheinende Chat-Antwort automatisch vorgelesen.
+                        Sie können diese Option deaktivieren, indem Sie auf diese Schaltfläche klicken. Wenn das
+                        Vorlesen der Antwort gerade
+                        stattfindet (die Schaltfläche pulsiert rot), können Sie das Vorlesen unterbrechen, indem Sie auf
+                        diese Schaltfläche klicken.
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <button class="cmai-btn" style="display: inline-block; visibility: visible;"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="M603.691-333.847 561.539-376l104-104-104-104 42.152-42.153 104 104 104-104L853.844-584l-104 104 104 104-42.153 42.153-104-104-104 104Zm-457.535-46.154v-199.998h148.46l171.537-171.536v543.07L294.616-380.001h-148.46Z" />
+                            </svg></button>
+                    </td>
+
+                    <td style="vertical-align: middle;">
+                        Automatisches Vorlesen von Antworten ist deaktiviert. Klicken Sie, wenn Sie die Funktion erneut
+                        aktivieren möchten.
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <button class="cmai-btn" style="display: inline-block; visibility: visible;"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="M140.001-324.616v-59.998h300.384v59.998H140.001Zm0-160v-59.998h459.23v59.998h-459.23Zm0-160v-59.998h459.23v59.998h-459.23Zm508.846 504.615v-278.844l211.536 139.614-211.536 139.23Z" />
+                            </svg>
+                        </button>
+                    </td>
+
+                    <td style="vertical-align: middle;">
+                        Klicken Sie einmal <b>(einfacher Klick)</b>, um den gesamten Thread vom ersten Beitrag an
+                        vorzulesen. Klicken Sie
+                        schnell zweimal <b>(Doppelklick)</b>, um den letzten Beitrag (Antwort) im Thread vorzulesen.
+                        Wenn die Thread-Lektüre gerade stattfindet - die Schaltfläche pulsiert rot - können Sie diese
+                        jederzeit
+                        unterbrechen, indem Sie auf die Schaltfläche klicken.
+                        <br>
+                        Sie können auch einen beliebigen Textabschnitt markieren und auf dieses Symbol klicken, um ihn laut vorzulesen.
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <button class="cmai-btn" style="display: inline-block; visibility: visible;"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path d="M560-252v-456h134v456H560Zm-294 0v-456h134v456H266Z" />
+                            </svg></button>
+                        </button>
+                    </td>
+
+                    <td style="vertical-align: middle;">
+                        Klicken Sie, um das Lesen des Threads (oder der Chat-Antwort) anzuhalten oder fortzusetzen.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <button class="cmai-btn" style="display: inline-block; visibility: visible;"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="m405.384-120-14.461-115.692q-19.154-5.769-41.423-18.154-22.269-12.385-37.885-26.538L204.923-235l-74.616-130 92.231-69.539q-1.769-10.846-2.923-22.346-1.154-11.5-1.154-22.346 0-10.077 1.154-21.192t2.923-25.038L130.307-595l74.616-128.462 105.923 44.616q17.923-14.923 38.769-26.923 20.846-12 40.539-18.539L405.384-840h149.232l14.461 116.461q23 8.077 40.654 18.539 17.654 10.461 36.346 26.154l109-44.616L829.693-595l-95.308 71.846q3.308 12.385 3.692 22.731.385 10.346.385 20.423 0 9.308-.769 19.654-.77 10.346-3.539 25.038L827.923-365l-74.615 130-107.231-46.154q-18.692 15.693-37.615 26.923-18.923 11.231-39.385 17.77L554.616-120H405.384Zm73.539-260q41.846 0 70.923-29.077 29.077-29.077 29.077-70.923 0-41.846-29.077-70.923Q520.769-580 478.923-580q-42.077 0-71.039 29.077-28.961 29.077-28.961 70.923 0 41.846 28.961 70.923Q436.846-380 478.923-380Z" />
+                            </svg></button>
+                    </td>
+
+                    <td style="vertical-align: middle;">
+                        Klicken Sie, um die Einstellungen der Erweiterung zu öffnen und anzupassen. Sie können die
+                        Einstellungen
+                        für die Sprach-zu-Text-Transkription, Sprachparameter für den TTS (Text-zu-Sprache) Synthesizer
+                        und andere Vorlieben konfigurieren. <a href="#imai-ainfo-tts-section">Weitere Informationen zur
+                            TTS-Konfiguration</a>.
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+        </section>
+
+
+        <section id="imai-ainfo-stt-section">
+            <h2>STT Sprachtranskription (speech-to-text)</h2>
+            <p>Die Erweiterung bietet zwei Methoden zur Sprachtranskription:</p>
+            <ol>
+                <li>
+                    <p><b>webkitSpeechRecognition</b> - die Standardmethode, die die API des Chrome-Browsers verwendet.
+                        Die Transkription wird lokal (offline) durchgeführt. Hinweis: Diese Methode fügt keine
+                        Interpunktion hinzu und wird
+                        nur im Chrome-Browser unterstützt.</p>
+                </li>
+                <li>
+                    <p><b>Whisper</b> - ein von OpenAI entwickeltes KI-Modell zur Sprache-zu-Text-Transkription. Es
+                        bietet eine hochwertige
+                        Transkription mit korrekter Interpunktion. Erfordert einen OpenAI-API-Schlüssel, was mit Kosten
+                        verbunden ist
+                        (<a href="https://openai.com/pricing">OpenAI-Preisgestaltung</a>). Die Transkription wird auf
+                        OpenAI-Servern durchgeführt, was das Senden der Tonaufnahme erfordert.</p>
+                </li>
+            </ol>
+
+        </section>
+
+
+        <section id="imai-ainfo-tts-section">
+            <h2>TTS-Sprachsynthese (text-to-speech)</h2>
+            <ol>
+                <li>Die Erweiterung nutzt <b>speechSynthesis</b> - eine API, die vom Chrome-Browser
+                    und anderen auf Chromium basierenden Browsern (z.B. Edge, Opera, Brave) bereitgestellt wird. Dies
+                    ermöglicht die Sprachsynthese
+                    (TTS) im Offline-Modus, ohne Datenübertragung.</li>
+                <li>In den Einstellungen können Sie die Sprache und Stimme für die Sprachsynthese auswählen sowie andere
+                    Parameter anpassen, einschließlich Stimmlage und Lesegeschwindigkeit.</li>
+            </ol>
+        </section>
+
+
+        <section>
+            <h2>Datenschutz und Benutzerdaten</h2>
+            <p>
+                Die Erweiterung sammelt oder übermittelt keine persönlichen Daten. Alle Einstellungen werden
+                lokal in Ihrem Browser (localStorage) gespeichert. Wenn Sie jedoch die Transkriptionsmethode "Whisper"
+                verwenden und Ihren OpenAI API-Schlüssel angeben, wird die Erweiterung mit den
+                OpenAI-Servern kommunizieren, Audioaufnahmen zur Transkription senden und die OpenAI-Server
+                werden den Transkriptionstext zurücksenden.
+            </p>
+        </section>
+
+        <section>
+            <h2>Lizenz</h2>
+            <p>
+                Dies ist ein OpenSource-Projekt, das ich unter der GNU Affero General Public License v3.0 <a
+                    href="https://www.gnu.org/licenses/agpl-3.0.en.html">https://www.gnu.org/licenses/agpl-3.0.en.html</a>
+                auf der Plattform GitHub.com zur Verfügung stelle.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Ihre Unterstützung</h2>
+            <p>
+                Dieses Projekt entstand aus Neugier, Leidenschaft und der Freude am Programmieren, erforderte aber
+                gleichzeitig viel Zeit und Arbeit.
+                Wenn Ihnen diese Erweiterung gefällt und Sie sie nützlich finden, freue ich mich sehr. Und wenn Sie
+                können,
+                unterstützen Sie mit Ihrer Spende die Reborn Foundation, in der ich Yoga- und Wirbelsäulen-Therapiekurse
+                gebe (<a href="https://www.bosajoga.pl">www.bosajoga.pl</a>), ich wäre sehr
+                dankbar.
+            </p>
+
+            <p>
+                Ihre Spende unterstützt die satzungsgemäße Tätigkeit unserer Stiftung,
+                und ermöglicht die Fortsetzung von Yoga-Kursen und Wirbelsäulentherapiesitzungen.
+                Ziel dieser Sitzungen ist es, die Lebensqualität der Teilnehmer durch die Förderung der physischen und
+                psychischen Gesundheit zu verbessern.
+                Ihre Unterstützung hilft, die notwendigen Betriebskosten, die mit der Durchführung unserer Aktivitäten
+                verbunden sind,
+                zu decken, was für die Fortsetzung der Mission entscheidend ist und uns ermöglicht zu wachsen.
+            </p>
+
+
+            <p>Vielen Dank im Voraus für Ihre Unterstützung!
+            </p>
+
+            <br>
+            <p>
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="89TZLNRFD8VSQ" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                        name="submit" title="PayPal - The safer, easier way to pay online!"
+                        alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </p>
+        </section>
+
+
+
+    </article>
+
+    <div class="cmai-info-actions" style="text-align: right">
+        <button id="imai-info-button-close" class="cmai-info-button">Close</button>
+    </div>
+</section>
+<div class="cmai-info-overlay" id="imai-info-overlay"></div>

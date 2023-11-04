@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>mai_ | Whisper to ChatGPT</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+    body {
+        font-family: 'Roboto', verdana;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .cmai-info-container {
+        width: 500px;
+        height: 80%;
+        background-color: #f5f5f5;
+        padding: 20px;
+        line-height: 20px;
+    }
+
+    .cmai-info-container,
+    .cmai-info-container div,
+    .cmai-info-container p {
+        font-family: 'Roboto', verdana;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .cmai-info-container h2 {
+        margin: 20px 0 10px 0;
+    }
+
+    .cmai-info-container ol li {
+        list-style-type: disc;
+        margin: 10px 0 10px 40px;
+    }
+
+    .cmai-info-container a {
+        text-decoration: underline;
+        color: inherit;
+    }
+
+    .cmai-info-container section {
+        padding: 20px 0 10px;
+    }
+
+    .cmai-info-container section p {
+        padding-bottom: 10px;
+    }
+
+    .cmai-btn {
+        display: inline-block;
+        border-radius: 50%;
+        background: #444;
+        margin: 10px;
+        padding: 4px 4px;
+        height: 37px;
+        width: 37px;
+        font-size: 17px;
+        color: #eee;
+        stroke: #eee;
+        opacity: 1;
+
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    }
+
+
+    .cmai-btn:hover {
+        box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.25), 1px 3px 3px rgba(0, 0, 0, 0.22);
+        transform: scale(1.4);
+    }
+
+    /* ikony svg na przyciskach */
+    .cmai-btn svg path {
+        fill: #eee;
+    }
+
+    .cmai-btn svg {
+        width: 27px;
+        height: 27px;
+    }
+
+
+    .cmai-info-actions,
+    .cmai-info-overlay {display: none;}
+</style>
+
+<div id="imai-popup-container">
+</div>
+
+<script src="/js/popup.js"></script>

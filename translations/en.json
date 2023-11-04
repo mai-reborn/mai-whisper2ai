@@ -1,0 +1,62 @@
+{
+    "button.save": "Save",
+    "button.submit": "Submit",
+    "button.cancel": "Cancel",
+    "button.close": "Close",
+
+    "button.rec.on": "Click and speak",
+    "button.rec.off": "Microphone off",
+    "button.rec.transcription": "Transcribing voice to text",
+    "button.tts.on": "Automatic chat reply reading enabled, click if you want to disable this function",
+    "button.tts.off": "Automatic reply reading disabled, click if you want to enable this function",
+    "button.tts.all.on": "Click to read the entire thread from the beginning or the selected text excerpt, double-click to read the last entry in the thread.",
+    "button.tts.pause": "Pause - click to stop speaking",
+    "button.settings": "Editing plugin settings... \n\n[current settings]:\n",
+
+    "button.rec.on.title": "Click and speak",
+    "button.rec.off.title": "Microphone off",
+    "button.rec.transcription.title": "Transcribing speech",
+    "button.tts.on.title": "Read chat reply aloud",
+    "button.tts.off.title": "Automatic reply reading is disabled, click to enable",
+    "button.tts.all.on.title": "Read the entire thread aloud",
+    "button.tts.pause.title": "Pause/resume reading (TTS)",
+    "button.settings.title": "Open settings",
+
+
+    "settings.title": "Settings",
+    "settings.opeanai.apikey": "OpenAI API Key (required for Whisper transcription method)",
+    "settings.voice2text.mode": "Voice transcription method (Speech-To-Text)",
+    "settings.language": "Conversation language",
+    "settings.tts.rate": "Speech rate",
+    "settings.tts.pitch": "Voice pitch",
+    "settings.ignore.codeblocks": "Ignore code blocks",
+    "settings.stt.autosend": "Send automatically after voice transcription",
+    "settings.button.descriptions": "Display button descriptions",
+
+    "status.init": "Plugin initialization in progress...",
+    "status.standby":  "Awaiting commands",
+    "status_rec.on": "Sound recording in progress",
+    "status.transcription.in.progress": "Sound transcription in progress...",
+    "status.tts.on": "Text to speech in progress",
+    "status.tts.all.on": "Text to speech for entire thread in progress",
+    "status_tts_pause": "Pause enabled",
+
+    "status.init.title": "Initialization in progress",
+    "status.init.mic.on": "microphone: on",
+    "status.init.mic.off": "microphone: off",
+    "status.init.settings.loaded": "Settings loaded",
+    "status.init.tts.ready": "TTS ready",
+    "status.init.tts.on": "TTS: on",
+    "status.init.tts.off": "TTS: off",
+    "status.init.pageadapter.ready": "PageAdapter ready",
+    "status.init.lang": "language",
+    "status.init.voice": "voice",
+    "status.init.stt.method": "Speech-to-text",
+
+    "message.webkit.unavailable" : "The speech-to-text method ('webkit') selected in settings is not supported in your browser (but works in Chrome). You can change the method to 'whisper' - which will also give you better transcription quality (with correct punctuation). You can read more about this by clicking on info (in the lower right corner of the plugin)",
+    "message.error.closebtn": "[close message]",
+
+    "app.title.chatgpt": "Whisper to ChatGPT",
+    "app.title.claude": "Whisper to Claude",
+    "app.version": "Version"
+}

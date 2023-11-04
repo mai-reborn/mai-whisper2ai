@@ -1,0 +1,725 @@
+/* Settings ---------------- */
+
+.cmai-control-box,
+.cmai-control-box div,
+.cmai-control-box p,
+.cmai-settings-container,
+.cmai-settings-container div,
+.cmai-settings-container p,
+.cmai-info-container,
+.cmai-info-container div,
+.cmai-info-container p,
+.cmai-donate-container,
+.cmai-donate-container div,
+.cmai-donate-container p {
+    font-family: roboto, arial;
+    font-weight: normal;
+}
+
+
+/* Bazowy styl dla kontenera */
+.cmai-donate-container,
+.cmai-info-container,
+.cmai-settings-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    display: none;
+
+    z-index: 2025;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centrowanie elementu */
+}
+
+
+#cmai-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2024;
+}
+
+/* Tytuł */
+.cmai-donate-title,
+.cmai-info-title,
+.cmai-settings-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Pola */
+.cmai-settings-field {
+    margin-bottom: 20px;
+}
+
+/* Etykiety */
+.cmai-settings-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Pola wyboru i wprowadzania */
+.cmai-settings-select,
+.cmai-settings-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* Przyciski */
+.cmai-donate-button,
+.cmai-info-button,
+.cmai-settings-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6200ea;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cmai-settings-button:hover {
+    background-color: #3700b3;
+}
+
+
+
+
+
+/* End Settings ---------------- */
+
+
+
+/* Interface ---------------- */
+
+
+/* Styl kontenera */
+
+/* Nagłówek */
+.cmai-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+
+    background-color: #444;
+    color: #eee;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+/* Kontrolki */
+.cmai-controls {
+    padding: 10px;
+}
+
+/* Tabela */
+.cmai-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+
+#imai-control-box {
+    width: 300px;
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    display: inline-block;
+    background: #DDD;
+    color: #444;
+    padding: 0;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: bold;
+    z-index: 2023;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.16), 3px 3px 8px rgba(0, 0, 0, 0.23);
+}
+
+#imai-control-box table {
+    width: 100%;
+    font-size: 15px;
+}
+
+#imai-control-box table td {
+    width: 20%;
+    text-align: center;
+}
+
+
+
+.cmai-header {
+    padding: 10px 20px;
+    border-bottom: 1px solid #aaa;
+    cursor: move;
+}
+
+.cmai-header a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 80%;
+    padding: 3px 4px;
+}
+
+.cmai-header span {
+    display: inline-block;
+    text-align: right;
+    font-size: 10px;
+}
+
+
+
+/* ------------------------------------------------------------------ */
+/* przyciski  */
+/* ------------------------------------------------------------------ */
+
+.cmai-btn {
+    display: inline-block;
+    border-radius: 50%;
+    background: #444;
+    margin: 10px;
+    padding: 4px 4px;
+    height: 34px;
+    width: 34px;
+    font-size: 17px;
+    color: #eee;
+    stroke: #eee;
+    opacity: 1;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+
+.cmai-btn:hover {
+    box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.25), 1px 3px 3px rgba(0, 0, 0, 0.22);
+    transform: scale(1.4);
+}
+
+
+.cmai-btn[data-mai="transcriptionInProgress"] {
+    background: #E91E63;
+}
+
+
+/* ikony svg na przyciskach */
+.cmai-btn svg path {
+    fill: #eee;
+}
+
+.cmai-btn svg {
+    width: 27px;
+    height: 27px;
+}
+
+/* przycisk wyłączony / nieaktywny */
+.cmai-btn:disabled,
+.cmai-btn[disabled] {
+    /* opacity: 0.4 !important; */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) !important;
+    /* background-color: #ccc; */
+}
+
+.cmai-btn:disabled:hover,
+.cmai-btn[disabled]:hover {
+    opacity: 0.4 !important;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) !important;
+    /* background-color: #ccc; */
+    transform: scale(1);
+}
+
+
+/* przycisk aktywny (i animowany) */
+.cmai-btn-active {
+    animation: maipulsate 1.6s ease-in-out infinite;
+
+}
+
+@keyframes maipulsate {
+    0% {
+        opacity: 1;
+        transform: scale(1.2);
+        background-color: #444;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.4);
+        background-color: #E91E63;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+        background-color: #444;
+    }
+}
+
+.cmai-btn.cmai-btn-active[data-mai="recON"] {
+    background: #E91E63 !important;
+}
+
+.cmai-btn.cmai-btn-active:not([data-mai="recON"]) {
+    /* background: #4CAF50; */
+    box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.25), 1px 3px 3px rgba(0, 0, 0, 0.22);
+}
+
+
+/* zatrzymana animacja przycisku */
+.cmai-btn-paused {
+    transform: scale(1.2);
+    background-color: #444 !important;
+    animation-play-state: paused;
+}
+
+.cmai-btn-inprogresss {
+    transform: scale(1.4);
+}
+
+
+/* footer -------------------- */
+.cmai-footer {
+    padding: 5px 10px;
+    min-height: 30px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.cmai-footer-messages {
+    padding: 0 10px 0 10px;
+}
+
+
+.cmai-error,
+.cmai-init-box,
+.cmai-button-description {
+    border-top: 1px solid #aaa;
+    display: none;
+    margin: 5px 0 20px 0;
+    padding-top: 5px;
+    min-height: 1px;
+    clear: both;
+}
+
+.cmai-init-box {
+    border-top-width: 0;
+}
+
+.cmai-init-log {
+    margin: 0 0 10px 0;
+    clear: both;
+}
+
+
+
+.cmai-message {
+    margin: 10px 0;
+}
+
+/* Styl dla komunikatów o błędach */
+
+.cmai-error {
+    border-top-width: 0;
+    border-left: 2px solid #cc0000;
+    padding-left: 10px;
+}
+
+#imai-error-close-btn {
+    color: #cc0000;
+    font-size: 0.9em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.cmai-settings-container .cmai-error-message {
+    border-top-width: 0;
+    border-left: 2px solid #cc0000;
+    padding-left: 10px;
+    color: #cc0000;
+    margin: 10px 0;
+}
+
+
+.cmai-copyright-bar {
+    font-size: 12px;
+    font-weight: 300;
+    color: #555;
+    line-height: 15px;
+    padding: 10px 10px 5px 10px;
+}
+
+.cmai-copyright-bar .cmai-col-1-2 {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.cmai-copyright-bar .cmai-col-2-2 {
+    width: 45%;
+    float: right;
+    text-align: right;
+}
+
+.cmai-clear {
+    clear: both
+}
+
+
+
+.cmai-logo-bar {
+    line-height: 20px;
+    font-size: 16px;
+    height: 20px;
+    text-align: left;
+    font-weight: 300;
+}
+
+svg.cmai-logo {
+    height: 16px;
+    float: left;
+    margin-right: 10px;
+    opacity: 0.6;
+}
+
+.cmai-logo-bar strong {
+    font-weight: 700;
+}
+
+.cmai-logo-bar .cmai-app-title {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* End Interface ---------------- */
+
+.cmai-pulsate {
+    animation: amai-pulsate 1.6s ease-in-out infinite;
+
+}
+
+
+@keyframes amai-pulsate {
+    0% {
+        opacity: 1;
+        transform: scale(1.2);
+        background-color: #444;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.4);
+        background-color: #E91E63;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+        background-color: #444;
+    }
+}
+
+
+
+.cmai-rotate-left {
+    animation: amai-rotate-left 1s linear infinite;
+}
+
+@keyframes amai-rotate-left {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.cmai-rotate-right {
+    animation: amai-rotate-right 1s linear infinite;
+}
+
+@keyframes amai-rotate-right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.cmai-pause-animation {
+    transform: scale(1.2);
+    background-color: #444 !important;
+    animation-play-state: paused;
+}
+
+
+
+
+
+
+/* klasy dynamicznie dodawane do czytanego na stronie tekstu -------------------- */
+.cmai-current-post {
+    /* box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.2) !important; */
+}
+
+.cmai-selected-text {
+    /* box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2) !important; */
+}
+
+.cmai-highlight-text {
+    background-color: #FFEB3B;
+    color: black;
+}
+
+/* Zmiana koloru zaznaczenia (metoda wykorzystujaca api przeglądarki) */
+::selection {
+    background-color: #FFEB3B;
+    color: black;
+}
+
+/* animacja przycisków po inicjalizacji wtyczki */
+.cmai-btn.animating {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.4);
+}
+
+
+/* quick language menu */
+.cmai-lang-btn {
+    display: none;
+    float: right;
+    cursor: pointer;
+}
+
+.cmai-lang-btn.cmai-lang-active {
+    margin-right: 8px;
+    text-decoration: underline;
+    cursor: default;
+}
+
+#imai-lang-2:hover {
+    transform: scale(1.2);
+    color: #E91E63;
+    cursor: pointer;
+}
+
+
+/* info page */
+.cmai-info-btn {
+    display: inline-block;
+}
+
+#imai-info-btn:hover {
+    transform: scale(1.2);
+    color: #E91E63;
+    cursor: pointer;
+}
+
+
+.cmai-info-container {
+    font-size: 15px;
+    padding: 40px 80px 40px 40px;
+
+    width: 100%;
+    max-width: 800px;
+    max-height: 80%;
+    margin: auto;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    display: none;
+
+    z-index: 2025;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    overflow: scroll;
+}
+
+.cmai-info-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2024;
+}
+.cmai-info-container h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.cmai-info-container h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.cmai-info-container h2 {
+    margin: 30px 0 20px 0;
+}
+
+.cmai-info-container ol li {
+    list-style-type: disc;
+    margin: 5px 0 5px 40px;
+}
+
+.cmai-info-container a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.cmai-info-container section {
+    padding: 20px 0 20px;
+}
+ 
+.cmai-info-container table {
+    width: 100%;
+}
+
+.cmai-info-container table tr {
+border-top: 1px dotted #999;
+}
+
+.cmai-info-container table td {
+    vertical-align: top;
+    padding: 20px 10px;
+}
+
+
+.cmai-info-actions {
+    margin-top: 30px;
+}
+.cmai-info-actions button {
+    background-color: #ccc;
+}
+
+.cmai-info-container section p {
+    padding-bottom: 10px;
+}
+
+
+
+/* popup page */
+.cmai-popup-container {
+    background: #C9C9C9;
+    color: #444;
+}
+
+
+
+/* donate page */
+.cmai-donate-btn {
+    float: right;
+    margin-left: 8px;
+}
+
+#imai-donate-btn:hover {
+    transform: scale(1.6);
+    color: #E91E63;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+
+.cmai-donate-btn svg path {
+    fill: #777;
+}
+
+#imai-donate-btn:hover svg path {
+    fill: #E91E63;
+}
+
+.cmai-donate-btn svg {
+    width: 15px;
+    height: 15px;
+    position: inline-block;
+}
+
+
+
+.cmai-donate-container {
+    font-size: 15px;
+    padding: 40px 80px 40px 40px;
+
+    width: 100%;
+    max-width: 600px;
+    max-height: 80%;
+    margin: auto;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    display: none;
+
+    z-index: 2025;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centrowanie elementu */
+}
+
+.cmai-donate-container article p {
+    margin: 0 0 15px 0;
+}
+
+.cmai-donate-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2024;
+}
+
+.cmai-donate-container h2 {
+    margin-top: 20px;
+}
+
+.cmai-donate-container ol li {
+    list-style-type: disc;
+    margin: 0 0 0 40px;
+}
+
+.cmai-donate-container a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.cmai-donate-actions button {
+    background-color: #ccc;
+}
+
+
+
+.cmai-controls-init .cmai-btn {
+    opacity: 0.5;
+}

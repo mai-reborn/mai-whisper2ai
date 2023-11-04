@@ -1,0 +1,62 @@
+{
+    "button.save": "Enregistrer",
+    "button.submit": "Soumettre",
+    "button.cancel": "Annuler",
+    "button.close": "Fermer",
+
+    "button.rec.on":  "Cliquez et parlez",
+    "button.rec.off": "Micro éteint",
+    "button.rec.transcription": "Transcription de la voix en texte",
+    "button.tts.on": "Lecture automatique des réponses du chat activée, cliquez si vous souhaitez désactiver cette fonction",
+    "button.tts.off": "Lecture automatique des réponses désactivée, cliquez si vous souhaitez activer cette fonction",
+    "button.tts.all.on": "Cliquez pour lire l'ensemble du fil dès le début ou l'extrait de texte sélectionné, double-cliquez pour lire la dernière entrée dans le fil.",
+    "button.tts.pause": "Pause - cliquez pour arrêter la lecture",
+    "button.settings": "Modification des paramètres du plugin... \n\n[paramètres actuels]:\n",
+
+    "button.rec.on.title": "Cliquez et parlez",
+    "button.rec.off.title": "Micro éteint",
+    "button.rec.transcription.title": "Transcription de la parole",
+    "button.tts.on.title": "Lire la réponse du chat à haute voix",
+    "button.tts.off.title": "La lecture automatique des réponses est désactivée, cliquez pour activer",
+    "button.tts.all.on.title": "Lire l'ensemble du fil à haute voix",
+    "button.tts.pause.title": "Pause/reprise de la lecture (TTS)",
+    "button.settings.title": "Ouvrir les paramètres",
+
+
+    "settings.title": "Paramètres",
+    "settings.opeanai.apikey": "Clé API OpenAI (nécessaire pour la transcription via la méthode Whisper)",
+    "settings.voice2text.mode": "Méthode de transcription vocale (Speech-To-Text)",
+    "settings.language": "Langue de la conversation",
+    "settings.tts.rate": "Vitesse de parole",
+    "settings.tts.pitch": "Hauteur de la voix",
+    "settings.ignore.codeblocks": "Ignorer les blocs de code",
+    "settings.stt.autosend": "Envoyer automatiquement après la transcription vocale",
+    "settings.button.descriptions": "Afficher les descriptions des boutons",
+
+    "status.init": "Initialisation du plugin en cours...",
+    "status.standby":  "En attente de commandes",
+    "status_rec.on": "Enregistrement sonore en cours",
+    "status.transcription.in.progress": "Transcription du son en cours...",
+    "status.tts.on": "Texte à la parole en cours",
+    "status.tts.all.on": "Texte à la parole pour tout le fil en cours",
+    "status_tts_pause": "Pause activée",
+
+    "status.init.title": "Initialisation en cours",
+    "status.init.mic.on": "microphone : activé",
+    "status.init.mic.off": "microphone : désactivé",
+    "status.init.settings.loaded": "Paramètres chargés",
+    "status.init.tts.ready": "TTS prêt",
+    "status.init.tts.on": "TTS : activé",
+    "status.init.tts.off": "TTS : désactivé",
+    "status.init.pageadapter.ready": "PageAdapter prêt",
+    "status.init.lang": "langue",
+    "status.init.voice": "voix",
+    "status.init.stt.method": "Texte-à-parole",
+
+    "message.webkit.unavailable" : "La méthode de texte-à-parole ('webkit') sélectionnée dans les paramètres n'est pas prise en charge par votre navigateur (mais fonctionne sur Chrome). Vous pouvez changer la méthode à 'whisper' - qui vous donnera également une meilleure qualité de transcription (avec une ponctuation correcte). Vous pouvez en savoir plus en cliquant sur info (dans le coin inférieur droit du plugin)",
+    "message.error.closebtn": "[fermer le message]",
+
+    "app.title.chatgpt": "Whisper à ChatGPT",
+    "app.title.claude": "Whisper à Claude",
+    "app.version": "Version"
+}
