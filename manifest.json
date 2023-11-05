@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "mai_ | Whisper to ChatGPT and Claude.ai",
     "version": "1.0.0",
-    "description": "The extension enables voice interaction with ChatGPT and Claude.ai in the Chrome browser and other browsers based on Chromium. It allows for the use of the AI model Whisper developed by OpenAI for speech-to-text transcription. You can also use the transcription method built into the browser  (webkitSpeechRecognition)",
+    "description": "Voice-enable ChatGPT and Claude.ai in Chrome with OpenAI's Whisper for speech-to-text or use built-in transcription.",
 
 	"content_scripts":[
 		{
