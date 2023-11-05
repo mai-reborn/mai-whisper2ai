@@ -1534,29 +1534,34 @@ class MAIInterface {
      */
     async loadInfoPg() {
         if (!this.infoPgLoaded) {
-
+    
             const langCode = navigator.language.includes('-') ?
                 navigator.language.split('-')[0] :
                 navigator.language;
-
+    
             let filePath = `html/info_${langCode}.html`;
-
-            let data = await this._loadFile(filePath);
-
-            if (data === null) {
-                filePath = 'html/info_en.html';
-                data = await this._loadFile(filePath);
-            }
-
-            if (data !== null) {
-                jQuery("body").append(data);
-                jQuery("#imai-info-overlay").click(() => this.hideInfoPg());
-                jQuery("#imai-info-button-close").text(this.i18n.getTranslation("button.close"));
-                jQuery("#imai-info-button-close").click(() => this.hideInfoPg());
-                this.infoPgLoaded = true;
+    
+            try {
+                let data = await this._loadFile(filePath);
+    
+                if (data === null) {
+                    filePath = 'html/info_en.html';
+                    data = await this._loadFile(filePath);
+                }
+    
+                if (data !== null) {
+                    jQuery("body").append(data);
+                    jQuery("#imai-info-overlay").click(() => this.hideInfoPg());
+                    jQuery("#imai-info-button-close").text(this.i18n.getTranslation("button.close"));
+                    jQuery("#imai-info-button-close").click(() => this.hideInfoPg());
+                    this.infoPgLoaded = true;
+                }
+            } catch (error) {
+                MAILogger.error('Error loading info page:', error);
             }
         }
     }
+    
 
 
     async showInfoPg() {
