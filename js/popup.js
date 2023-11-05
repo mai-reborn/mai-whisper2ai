@@ -28,16 +28,21 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch(filePath)
         .then(response => {
             if (!response.ok) {
-                // If the file doesn't exist, fall back to default language (en)
-                return fetch('/html/info_en.html');
+                // If the file does not exist, use the default language (en)
+                throw new Error('File not found, falling back to default language');
             }
             return response;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // In case of error, we load the English version
+            return fetch('/html/info_en.html');
         })
         .then(response => response.text())
         .then(data => {
             document.getElementById('imai-popup-container').innerHTML = data;
         })
         .catch(error => {
-            console.error('Error:', error);
+            console.error('Error while loading default language:', error);
         });
 });
