@@ -1,8 +1,9 @@
   {
     "manifest_version": 3,
-    "name": "mai_ | Whisper to ChatGPT and Claude.ai",
-    "version": "1.0.2",
-    "description": "Voice-enable ChatGPT and Claude.ai in Chrome with OpenAI's Whisper for speech-to-text or use built-in transcription.",
+    "version": "1.0.3",
+    "name": "__MSG_extensionName__",
+    "description": "__MSG_extensionDescription__",
+    "default_locale": "en",
 
 	"content_scripts":[
 		{

@@ -225,17 +225,17 @@ class MAISettings {
          * Updates the text in the settings form to the active language version set in the browser.
          */
     updatei18nText() {
-        $("#imai-settings-title-label").text(this.i18n.getTranslation("settings.title"));
-        $("#imai-cfg-openai-api-key-label").text(this.i18n.getTranslation("settings.opeanai.apikey"));
-        $("#imai-cfg-voice2text-mode-label").text(this.i18n.getTranslation("settings.voice2text.mode"));
-        $("#imai-cfg-tts-language-label").text(this.i18n.getTranslation("settings.language"));
-        $("#imai-cfg-tts-rate-label").text(this.i18n.getTranslation("settings.tts.rate"));
-        $("#imai-cfg-tts-pitch-label").text(this.i18n.getTranslation("settings.tts.pitch"));
-        $("#imai-cfg-tts-ignore-codeblocks-label").text(this.i18n.getTranslation("settings.ignore.codeblocks"));
-        $("#imai-cfg-stt-autosend-text-prompt-label").text(this.i18n.getTranslation("settings.stt.autosend"));
-        $('#imai-cfg-show-btn-descriptions-label').text(this.i18n.getTranslation("settings.button.descriptions"));
-        $("#imai-cfg-settings-save").text(this.i18n.getTranslation("button.save"));
-        $("#imai-cfg-settings-cancel").text(this.i18n.getTranslation("button.cancel"));
+        $("#imai-settings-title-label").text(this.i18n.getTranslation("settingsTitle"));
+        $("#imai-cfg-openai-api-key-label").text(this.i18n.getTranslation("settingsOpenaiApikey"));
+        $("#imai-cfg-voice2text-mode-label").text(this.i18n.getTranslation("settingsVoice2textMode"));
+        $("#imai-cfg-tts-language-label").text(this.i18n.getTranslation("settingsLanguage"));
+        $("#imai-cfg-tts-rate-label").text(this.i18n.getTranslation("settingsTtsRate"));
+        $("#imai-cfg-tts-pitch-label").text(this.i18n.getTranslation("settingsTtsPitch"));
+        $("#imai-cfg-tts-ignore-codeblocks-label").text(this.i18n.getTranslation("settingsIgnoreCodeblocks"));
+        $("#imai-cfg-stt-autosend-text-prompt-label").text(this.i18n.getTranslation("settingsSttAutosend"));
+        $('#imai-cfg-show-btn-descriptions-label').text(this.i18n.getTranslation("settingsButtonDescriptions"));
+        $("#imai-cfg-settings-save").text(this.i18n.getTranslation("buttonSave"));
+        $("#imai-cfg-settings-cancel").text(this.i18n.getTranslation("buttonCancel"));
     }
 
 

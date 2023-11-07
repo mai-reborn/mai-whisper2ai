@@ -203,7 +203,7 @@ class MAIInterface {
         this.setAppStatus(MAIInterface.STATUS.INITIALIZATION);
 
         MAILogger.log("checkModuleInitialization");
-        jQuery("#imai-init-title").text(this.i18n.getTranslation("status.init.title"));
+        jQuery("#imai-init-title").text(this.i18n.getTranslation("statusInitTitle"));
         jQuery("#imai-init-log").empty();
 
         let ttsInitTimeOutId = null;
@@ -426,8 +426,8 @@ class MAIInterface {
                 // If the "webkit" method is selected in the settings but it's not the Chrome browser
                 if (this.settings.voiceToTextMode === 'webkit' && !this.isBrowserInList(['Chrome'])) {
                     // Display message that 'webkit' is not supported in this browser
-                    MAILogger.error(this.i18n.getTranslation("message.webkit.unavailable"));
-                    this.showErrorMessage(this.i18n.getTranslation("message.webkit.unavailable"));
+                    MAILogger.error(this.i18n.getTranslation("messageWebkitUnavailable"));
+                    this.showErrorMessage(this.i18n.getTranslation("messageWebkitUnavailable"));
                 }
                 else { // Turn on recording
                     this.setAppStatus(MAIInterface.STATUS.REC_ON);
@@ -584,11 +584,11 @@ class MAIInterface {
 
                 // Sprawdź, czy URL zawiera "openai.com"
                 if (currentURL.includes("openai.com".toLowerCase())) {
-                    $('#imai-app-title').text(this.i18n.getTranslation("app.title.chatgpt"));
+                    $('#imai-app-title').text(this.i18n.getTranslation("appTitleChatgpt"));
                 }
                 // Sprawdź, czy URL zawiera "Claude.ai"
                 else if (currentURL.includes("Claude.ai".toLowerCase())) {
-                    $('#imai-app-title').text(this.i18n.getTranslation("app.title.claude"));
+                    $('#imai-app-title').text(this.i18n.getTranslation("appTitleClaude"));
                 }
 
             });
@@ -639,42 +639,42 @@ class MAIInterface {
 
         if (this.settings.showButtonDescriptions) {
             jQuery(".cmai-btn[data-mai='recON']").hover(
-                () => this.showButtonDescription(this.i18n.getTranslation("button.rec.on")),
+                () => this.showButtonDescription(this.i18n.getTranslation("buttonRecOn")),
                 () => this.hideButtonDescription()
             );
 
             jQuery(".cmai-btn[data-mai='recOFF']").hover(
-                () => this.showButtonDescription(this.i18n.getTranslation("button.rec.off")),
+                () => this.showButtonDescription(this.i18n.getTranslation("buttonRecOff")),
                 () => this.hideButtonDescription()
             );
 
             jQuery(".cmai-btn[data-mai='transcriptionInProgress']").hover(
-                () => this.showButtonDescription(this.i18n.getTranslation("button.rec.transcription")),
+                () => this.showButtonDescription(this.i18n.getTranslation("buttonRecTranscription")),
                 () => this.hideButtonDescription()
             );
 
             jQuery(".cmai-btn[data-mai='speechON']").hover(
-                () => this.showButtonDescription(this.i18n.getTranslation("button.tts.on")),
+                () => this.showButtonDescription(this.i18n.getTranslation("buttonTtsOn")),
                 () => this.hideButtonDescription()
             );
 
             jQuery(".cmai-btn[data-mai='speechOFF']").hover(
-                () => this.showButtonDescription(this.i18n.getTranslation("button.tts.off")),
+                () => this.showButtonDescription(this.i18n.getTranslation("buttonTtsOff")),
                 () => this.hideButtonDescription()
             );
 
             jQuery(".cmai-btn[data-mai='speechALL']").hover(
-                () => this.showButtonDescription(this.i18n.getTranslation("button.tts.all.on")),
+                () => this.showButtonDescription(this.i18n.getTranslation("buttonTtsAllOn")),
                 () => this.hideButtonDescription()
             );
 
             jQuery(".cmai-btn[data-mai='pause']").hover(
-                () => this.showButtonDescription(this.i18n.getTranslation("button.tts.pause")),
+                () => this.showButtonDescription(this.i18n.getTranslation("buttonTtsPause")),
                 () => this.hideButtonDescription()
             );
 
             jQuery(".cmai-btn[data-mai='settings']").hover(
-                () => this.showButtonSettingsDescription(this.i18n.getTranslation("button.settings")),
+                () => this.showButtonSettingsDescription(this.i18n.getTranslation("buttonSettings")),
                 () => this.hideButtonDescription()
             );
         }
@@ -709,14 +709,14 @@ class MAIInterface {
 
         //dodaje opisy przycisków
         /*
-        jQuery(".cmai-btn[data-mai='recON']").attr('title', this.i18n.getTranslation("button.rec.on.title"));
-        jQuery(".cmai-btn[data-mai='recOFF']").attr('title', this.i18n.getTranslation("button.rec.off.title"));
-        jQuery(".cmai-btn[data-mai='transcriptionInProgress']").attr('title', this.i18n.getTranslation("button.rec.transcription.title"));
-        jQuery(".cmai-btn[data-mai='speechON']").attr('title', this.i18n.getTranslation("button.tts.on.title"));
-        jQuery(".cmai-btn[data-mai='speechOFF']").attr('title', this.i18n.getTranslation("button.tts.off.title"));
-        jQuery(".cmai-btn[data-mai='speechALL']").attr('title', this.i18n.getTranslation("button.tts.all.on.title"));
-        jQuery(".cmai-btn[data-mai='pause']").attr('title', this.i18n.getTranslation("button.tts.pause.title"));
-        jQuery(".cmai-btn[data-mai='settings']").attr('title', this.i18n.getTranslation("button.settings.title"));
+        jQuery(".cmai-btn[data-mai='recON']").attr('title', this.i18n.getTranslation("buttonRecOnTitle"));
+        jQuery(".cmai-btn[data-mai='recOFF']").attr('title', this.i18n.getTranslation("buttonRecOffTitle"));
+        jQuery(".cmai-btn[data-mai='transcriptionInProgress']").attr('title', this.i18n.getTranslation("buttonRecTranscriptionTitle"));
+        jQuery(".cmai-btn[data-mai='speechON']").attr('title', this.i18n.getTranslation("buttonTtsOnTitle"));
+        jQuery(".cmai-btn[data-mai='speechOFF']").attr('title', this.i18n.getTranslation("buttonTtsOffTitle"));
+        jQuery(".cmai-btn[data-mai='speechALL']").attr('title', this.i18n.getTranslation("buttonTtsAllOnTitle"));
+        jQuery(".cmai-btn[data-mai='pause']").attr('title', this.i18n.getTranslation("buttonTtsPauseTitle"));
+        jQuery(".cmai-btn[data-mai='settings']").attr('title', this.i18n.getTranslation("buttonSettingsTitle"));
         */
     }
 
@@ -731,7 +731,7 @@ class MAIInterface {
     showErrorMessage(message) {
         // Display the error in the UI
         jQuery("#imai-error-message").text(message);
-        jQuery("#imai-error-close-btn").text(this.i18n.getTranslation("message.error.closebtn"));
+        jQuery("#imai-error-close-btn").text(this.i18n.getTranslation("messageErrorClosebtn"));
         jQuery("#imai-error-close-btn").click(() => { this.hideErrorMessage(); });
         jQuery("#imai-error-box").slideDown(400);
     }
@@ -853,14 +853,14 @@ class MAIInterface {
         }
         // Displays the button description
         text = text
-            + this.i18n.getTranslation("status.init.stt.method") + ": " + this.settings.voiceToTextMode + '\n'
-            + this.i18n.getTranslation("status.init.lang") + ": " + this.settings.ttsLanguage + '\n'
-            + this.i18n.getTranslation("status.init.voice") + ": " + this.settings.ttsVoice + '\n'
-            + this.i18n.getTranslation("settings.tts.rate") + ": " + this.settings.ttsRate + '\n'
-            + this.i18n.getTranslation("settings.tts.pitch") + ": " + this.settings.ttsPitch + '\n'
-            + this.i18n.getTranslation("settings.ignore.codeblocks") + ": " + this.settings.ttsIgnoreCodeBlocks + '\n'
-            + this.i18n.getTranslation("settings.stt.autosend") + ": " + this.settings.sttAutosendTextPrompt + '\n'
-            + this.i18n.getTranslation("app.version") + ": " + this.version + '\n';
+            + this.i18n.getTranslation("statusInitSttMethod") + ": " + this.settings.voiceToTextMode + '\n'
+            + this.i18n.getTranslation("statusInitLang") + ": " + this.settings.ttsLanguage + '\n'
+            + this.i18n.getTranslation("statusInitVoice") + ": " + this.settings.ttsVoice + '\n'
+            + this.i18n.getTranslation("settingsTtsRate") + ": " + this.settings.ttsRate + '\n'
+            + this.i18n.getTranslation("settingsTtsPitch") + ": " + this.settings.ttsPitch + '\n'
+            + this.i18n.getTranslation("settingsIgnoreCodeblocks") + ": " + this.settings.ttsIgnoreCodeBlocks + '\n'
+            + this.i18n.getTranslation("settingsSttAutosend") + ": " + this.settings.sttAutosendTextPrompt + '\n'
+            + this.i18n.getTranslation("appVersion") + ": " + this.version + '\n';
 
         text = text.replace(/\n/g, '<br>')
             + '<div class="clear: both"></div>';
@@ -1271,7 +1271,7 @@ class MAIInterface {
         MAILogger.log("MAIInterface.onInitMicrophone");
         if (!this.initMicrophone) {
             this.initMicrophone = true;
-            let _micLogText = (this.isMicAvailable) ? this.i18n.getTranslation("status.init.mic.on") : this.i18n.getTranslation("status.init.mic.off");
+            let _micLogText = (this.isMicAvailable) ? this.i18n.getTranslation("statusInitMicOn") : this.i18n.getTranslation("statusInitMicOff");
             this.showInitializationLogs(_micLogText);
         }
     }
@@ -1285,7 +1285,7 @@ class MAIInterface {
         MAILogger.log("MAIInterface.onInitTts");
         if (!this.initTts) {
             this.initTts = true;
-            this.showInitializationLogs(this.i18n.getTranslation("status.init.tts.ready"));
+            this.showInitializationLogs(this.i18n.getTranslation("statusInitTtsReady"));
         }
     }
 
@@ -1297,10 +1297,10 @@ class MAIInterface {
         MAILogger.log("MAIInterface.onInitSettings");
         if (!this.initSettings) {
             this.initSettings = true;
-            //this.showInitializationLogs(this.i18n.getTranslation("status.init.settings.loaded"));
-            this.showInitializationLogs(this.i18n.getTranslation("status.init.stt.method") + ": " + this.settings.voiceToTextMode);
-            this.showInitializationLogs(this.i18n.getTranslation("status.init.lang") + ": " + this.settings.ttsLanguage);
-            this.showInitializationLogs(this.i18n.getTranslation("status.init.voice") + ": " + this.settings.ttsVoice);
+            //this.showInitializationLogs(this.i18n.getTranslation("statusInitSettingsLoaded"));
+            this.showInitializationLogs(this.i18n.getTranslation("statusInitSttMethod") + ": " + this.settings.voiceToTextMode);
+            this.showInitializationLogs(this.i18n.getTranslation("statusInitLang") + ": " + this.settings.ttsLanguage);
+            this.showInitializationLogs(this.i18n.getTranslation("statusInitVoice") + ": " + this.settings.ttsVoice);
 
             // Resetting settings if TTS isn't initialized
             //this.pageAdapter.tts.resetSettings();
@@ -1321,7 +1321,7 @@ class MAIInterface {
             MAILogger.log("MAIInterface.onInitPageAdapter() -> pageAdapter.resetSettings()");
             this.pageAdapter.resetSettings();
             this.initPageAdapter = true;
-            this.showInitializationLogs(this.i18n.getTranslation("status.init.pageadapter.ready"));
+            this.showInitializationLogs(this.i18n.getTranslation("statusInitPageadapterReady"));
         }
     }
 
@@ -1493,7 +1493,7 @@ class MAIInterface {
             if (data !== null) {
                 jQuery("body").append(data);
                 jQuery("#imai-donate-overlay").click(() => this.hideDonatePg());
-                jQuery("#imai-donate-button-close").text(this.i18n.getTranslation("button.close"));
+                jQuery("#imai-donate-button-close").text(this.i18n.getTranslation("buttonClose"));
                 jQuery("#imai-donate-button-close").click(() => this.hideDonatePg());
                 this.donatePgLoaded = true;
             }
@@ -1552,7 +1552,7 @@ class MAIInterface {
                 if (data !== null) {
                     jQuery("body").append(data);
                     jQuery("#imai-info-overlay").click(() => this.hideInfoPg());
-                    jQuery("#imai-info-button-close").text(this.i18n.getTranslation("button.close"));
+                    jQuery("#imai-info-button-close").text(this.i18n.getTranslation("buttonClose"));
                     jQuery("#imai-info-button-close").click(() => this.hideInfoPg());
                     this.infoPgLoaded = true;
                 }
