@@ -17,7 +17,7 @@ or <a href="https://claude.ai">claude.ai</a>
     - [Extension during voice recording (Claude.ai)](#extension-during-voice-recording-claudeai)
     - [Settings](#settings)
   - [Installation](#installation)
-    - [Chrome Store (Coming Soon)](#chrome-store-coming-soon)
+    - [Chrome Store](#chrome-store)
     - [Manual Installation](#manual-installation)
   - [STT Voice Transcription (speech-to-text)](#stt-voice-transcription-speech-to-text)
   - [TTS Speech Synthesis (text-to-speech)](#tts-speech-synthesis-text-to-speech)
@@ -72,8 +72,9 @@ This is the settings menu where you can customize various aspects of the extensi
 
 ## Installation
 
-### Chrome Store (Coming Soon)
-This extension is currently in the process of being submitted to the Chrome Store and will soon be available for download from there.
+### Chrome Store 
+https://chromewebstore.google.com/detail/mai-whisper-to-chatgpt-an/eikfokiiajomccicnkljhdkgeaoicmem
+
 
 ### Manual Installation
 If you'd like to install the extension manually before it's available in the Chrome Store, follow these steps:
