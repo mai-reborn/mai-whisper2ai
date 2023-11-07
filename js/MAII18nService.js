@@ -17,67 +17,48 @@
  */
 
 
-
-
 class MAII18nService {
     constructor() {
-        this.translations = {};  // This will hold the loaded translations as JSON objects loaded from the file by this.loadTranslations()
-        this.isTranslationsLoaded = false;
-        //this.loadTranslations();
+      this.defaultLang = 'en';
+      this.userLang = navigator.language.split('-')[0]; // Only the language code ('en', 'pl', etc.)
+      this.loadTranslations();
     }
-
+  
     /**
-     * Attempts to load translations for the full language code.
+     * Load the Chrome i18n translations for the user's language.
      */
     loadTranslations() {
         return new Promise((resolve, reject) => {
-            const defaultLang = 'en';
-            let userLang = navigator.language || navigator.userLanguage || defaultLang;
-            const extensionURL = chrome.runtime.getURL('/');
-            const shortLang = userLang.split('-')[0];
-
-            const loadTranslationFile = (langCode) => {
-                const translationPath = `${extensionURL}translations/${langCode}.json`;
-                return $.getJSON(translationPath);
-            };
-
-            loadTranslationFile(shortLang)
-                .done((data) => {
-                    this.translations = data;
-                    this.isTranslationsLoaded = true;
-                    resolve();  // Rozwiązanie Promise
-                })
-                .fail(() => {
-                    loadTranslationFile(defaultLang)
-                        .done((data) => {
-                            this.translations = data;
-                            this.isTranslationsLoaded = true;
-                            resolve();  // Rozwiązanie Promise
-                        })
-                        .fail(() => {
-                            MAILogger.error(`Failed to load default translation file: ${defaultLang}.json`);
-                            this.isTranslationsLoaded = false;  
-                            reject();  // Odrzucenie Promise
-                        });
-                });
+          // Chrome provides the i18n API for handling translations
+          if (chrome.i18n) {
+            this.isTranslationsLoaded = true;
+            resolve('Translations loaded successfully.');
+          } else {
+            MAILogger.error('Chrome i18n API is not available.');
+            this.isTranslationsLoaded = false;
+            reject(new Error('Chrome i18n API is not available.'));
+          }
         });
-    }
-
-
+      }
+      
+  
     /**
-     * Returns the translation corresponding to the given key.
-     * Translations are defined in JSON files (e.g., "/translations/en.json")
+     * Returns the translation for the given key using Chrome's i18n API.
      * @param {string} key - The key for the translation text
      * @returns {string} - The translated text or the key itself if translation is not found
      */
     getTranslation(key) {
-        // Check if translations have been loaded and if the key exists
-        if (this.translations && this.translations.hasOwnProperty(key)) {
-            return this.translations[key];
+      // Use Chrome's i18n API to get the translated message
+      if (this.isTranslationsLoaded) {
+        const message = chrome.i18n.getMessage(key);
+        if (message) {
+          return message;
+        } else {
+            MAILogger.error(`Translation not found for key: ${key}`);
         }
-
-        // If the key does not exist or translations have not yet been loaded, return the key itself
-        MAILogger.error(`Translation not found for key: ${key}`);
-        return key;
+      }
+      // If the i18n API is not loaded or the key doesn't exist, return the key itself
+      return key;
     }
-}
+  }
+  
