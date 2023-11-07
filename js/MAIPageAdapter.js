@@ -53,11 +53,11 @@ class MAIPageAdapter {
         // String.fromCharCode(10) represents the newline character '\n'
         this.chunkDelimiters = [
             '.', '!', '?', '…', '。', '．', '！', '？',
-            ',', ', ', ';', ':', ': ', String.fromCharCode(10)
+            ';', ':', ': ', String.fromCharCode(10)
         ];
 
         this.additionalChunkDelimiters = [];
-        this.maxChunkLength = 200; // Max number of characters per chunk
+        this.maxChunkLength = 250; // Max number of characters per chunk
         this.minChunkLength = 50;  // Min number of characters per chunk
 
         // Set maximum recursion depth for the highlightNode method
