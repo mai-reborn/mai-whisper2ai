@@ -18,10 +18,10 @@
 
 
 // Uncomment the following line for production environment
-globalThis.MAI_APP_ENV = 'production';
+//globalThis.MAI_APP_ENV = 'production';
 
 // Setting the application environment to development. In this mode, errors are displayed in console.log
-//globalThis.MAI_APP_ENV = 'development';
+globalThis.MAI_APP_ENV = 'development';
 
 // Creation of the main application interface object
 const maiPlugin = new MAIInterface();
