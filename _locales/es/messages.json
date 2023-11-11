@@ -4,203 +4,203 @@
         "description": "The name of the extension."
     },
     "extensionDescription": {
-        "message": "Voice-enable ChatGPT and Claude.ai in Chrome with OpenAI's Whisper for speech-to-text or use built-in transcription.",
+        "message": "Chatgpt y Claude.ai en Chrome con OpenAI's Whisper para voz a texto o use la transcripción incorporada.",
         "description": "The description of the extension."
     },
     "buttonSave": {
-        "message": "Save",
+        "message": "Ahorrar",
         "description": "Button text for saving changes"
     },
     "buttonSubmit": {
-        "message": "Submit",
+        "message": "Entregar",
         "description": "Button text for submitting data"
     },
     "buttonCancel": {
-        "message": "Cancel",
+        "message": "Cancelar",
         "description": "Button text for cancelling an action"
     },
     "buttonClose": {
-        "message": "Close",
+        "message": "Cerca",
         "description": "Button text for closing a dialog"
     },
     "buttonRecOn": {
-        "message": "Click and speak",
+        "message": "Haga clic y habla",
         "description": "Button text to start voice recording"
     },
     "buttonRecOff": {
-        "message": "Microphone off",
+        "message": "Micrófono desactivado",
         "description": "Button text to indicate the microphone is off"
     },
     "buttonRecTranscription": {
-        "message": "Transcribing voice to text",
+        "message": "Transcripción de voz al texto",
         "description": "Button text indicating voice transcription is in progress"
     },
     "buttonTtsOn": {
-        "message": "Automatic chat reply reading enabled, click if you want to disable this function",
+        "message": "Lectura de respuesta de chat automático habilitado, haga clic si desea deshabilitar esta función",
         "description": "Button text to disable TTS (text-to-speech)"
     },
     "buttonTtsOff": {
-        "message": "Automatic reply reading disabled, click if you want to enable this function",
+        "message": "Respuesta automática Lectura Desactivada, haga clic si desea habilitar esta función",
         "description": "Button text to enable TTS"
     },
     "buttonTtsAllOn": {
-        "message": "Click to read the entire thread from the beginning or the selected text excerpt, double-click to read the last entry in the thread.",
+        "message": "Haga clic para leer el hilo completo desde el principio o el extracto de texto seleccionado, haga doble clic para leer la última entrada en el hilo.",
         "description": "Button text to read the entire chat thread"
     },
     "buttonTtsPause": {
-        "message": "Pause - click to stop speaking",
+        "message": "Pausa: haga clic para dejar de hablar",
         "description": "Button text to pause speech"
     },
     "buttonSettings": {
-        "message": "Editing plugin settings... \n\n[current settings]:\n",
+        "message": "Edición de configuración del complemento... \n\n [Configuración actual]:\n",
         "description": "Button text to edit plugin settings"
     },
     "buttonRecOnTitle": {
-        "message": "Click and speak",
+        "message": "Haga clic y habla",
         "description": "Title text for the voice recording button"
     },
     "buttonRecOffTitle": {
-        "message": "Microphone off",
+        "message": "Micrófono desactivado",
         "description": "Title text for the button indicating that the microphone is off"
     },
     "buttonRecTranscriptionTitle": {
-        "message": "Transcribing speech",
+        "message": "Discurso de transcripción",
         "description": "Title text for the button indicating speech transcription is in progress"
     },
     "buttonTtsOnTitle": {
-        "message": "Read chat reply aloud",
+        "message": "Leer el chat Responder en voz alta",
         "description": "Title text for the button that enables reading chat reply aloud"
     },
     "buttonTtsOffTitle": {
-        "message": "Automatic reply reading is disabled, click to enable",
+        "message": "La lectura de respuesta automática está deshabilitada, haga clic para habilitar",
         "description": "Title text for the button that enables TTS"
     },
     "buttonTtsAllOnTitle": {
-        "message": "Read the entire thread aloud",
+        "message": "Lea todo el hilo en voz alta",
         "description": "Title text for the button that reads the entire thread aloud"
     },
     "buttonTtsPauseTitle": {
-        "message": "Pause/resume reading (TTS)",
+        "message": "Pausa/Reanudar la lectura(TTS)",
         "description": "Title text for the button that pauses/resumes TTS"
     },
     "buttonSettingsTitle": {
-        "message": "Open settings",
+        "message": "Configuración abierta",
         "description": "Title text for the button that opens settings"
     },
     "settingsTitle": {
-        "message": "Settings",
+        "message": "Ajustes",
         "description": "Title for the settings page"
     },
     "settingsOpenaiApikey": {
-        "message": "OpenAI API Key (required for Whisper transcription method)",
+        "message": "OpenAI API Llave (Requerido para el método de transcripción Whisper)",
         "description": "Description for the API key input for Whisper method"
     },
     "settingsVoice2textMode": {
-        "message": "Voice transcription method (Speech-To-Text)",
+        "message": "Método de transcripción de voz (habla a texto)",
         "description": "Description for selecting the voice transcription method"
     },
     "settingsLanguage": {
-        "message": "Conversation language",
+        "message": "Lenguaje de conversación",
         "description": "Description for selecting the language of the conversation"
     },
     "settingsTtsRate": {
-        "message": "Speech rate",
+        "message": "Nivel de conversación",
         "description": "Description for adjusting the speech rate"
     },
     "settingsTtsPitch": {
-        "message": "Voice pitch",
+        "message": "Tono de voz",
         "description": "Description for adjusting the voice pitch"
     },
     "settingsIgnoreCodeblocks": {
-        "message": "Ignore code blocks",
+        "message": "Ignorar bloques de código",
         "description": "Option to ignore code blocks in text"
     },
     "settingsSttAutosend": {
-        "message": "Send automatically after voice transcription",
+        "message": "Enviar automáticamente después de la transcripción de voz",
         "description": "Option to send the transcribed text automatically"
     },
     "settingsButtonDescriptions": {
-        "message": "Display button descriptions",
+        "message": "Descripciones de botones de visualización",
         "description": "Option to display descriptions for each button"
     },
     "statusInit": {
-        "message": "Plugin initialization in progress...",
+        "message": "Inicialización de complementos en progreso...",
         "description": "Status message for plugin initialization"
     },
     "statusStandby": {
-        "message": "Awaiting commands",
+        "message": "Comandos de espera",
         "description": "Status message when the plugin is waiting for user input"
     },
     "statusRecOn": {
-        "message": "Sound recording in progress",
+        "message": "Grabación de sonido en progreso",
         "description": "Status message when recording is active"
     },
     "statusTranscriptionInProgress": {
-        "message": "Sound transcription in progress...",
+        "message": "Transcripción de sonido en progreso...",
         "description": "Status message during voice transcription"
     },
     "statusTtsOn": {
-        "message": "Text to speech in progress",
+        "message": "Texto al habla en progreso",
         "description": "Status message when TTS is active"
     },
     "statusTtsAllOn": {
-        "message": "Text to speech for entire thread in progress",
+        "message": "Texto a discurso durante todo el hilo en progreso",
         "description": "Status message when TTS is reading the entire thread"
     },
     "statusTtsPause": {
-        "message": "Pause enabled",
+        "message": "Pausa habilitada",
         "description": "Status message when TTS is paused"
     },
     "statusInitTitle": {
-        "message": "Initialization in progress",
+        "message": "Inicialización en progreso",
         "description": "Title for status during initialization"
     },
     "statusInitMicOn": {
-        "message": "microphone: on",
+        "message": "micrófono: encendido",
         "description": "Status message indicating the microphone is on"
     },
     "statusInitMicOff": {
-        "message": "microphone: off",
+        "message": "micrófono: apagado",
         "description": "Status message indicating the microphone is off"
     },
     "statusInitSettingsLoaded": {
-        "message": "Settings loaded",
+        "message": "Configuración cargada",
         "description": "Status message when settings have been loaded"
     },
     "statusInitTtsReady": {
-        "message": "TTS ready",
+        "message": "TTS listo",
         "description": "Status message when TTS is ready to use"
     },
     "statusInitTtsOn": {
-        "message": "TTS: on",
+        "message": "TTS: encendido",
         "description": "Status indicating TTS is on"
     },
     "statusInitTtsOff": {
-        "message": "TTS: off",
+        "message": "TTS: desactivado",
         "description": "Status indicating TTS is off"
     },
     "statusInitPageAdapterReady": {
-        "message": "PageAdapter ready",
+        "message": "PageAdapter listo",
         "description": "Status indicating the page adapter is ready"
     },
     "statusInitLang": {
-        "message": "language",
+        "message": "idioma",
         "description": "Status showing the current language setting"
     },
     "statusInitVoice": {
-        "message": "voice",
+        "message": "voz",
         "description": "Status showing the current voice setting"
     },
     "statusInitSttMethod": {
-        "message": "Speech-to-text",
+        "message": "Dictado a texto",
         "description": "Status showing the current speech-to-text method"
     },
     "messageWebkitUnavailable": {
-        "message": "The speech-to-text method ('webkit') selected in settings is not supported in your browser (but works in Chrome). You can change the method to 'whisper' - which will also give you better transcription quality (with correct punctuation). You can read more about this by clicking on info (in the lower right corner of the plugin)",
+        "message": "El método de voz a texto ('WebKit') seleccionado en la configuración no es compatible con su navegador (pero funciona en Chrome).Puede cambiar el método a 'susurrar', que también le dará una mejor calidad de transcripción (con puntuación correcta).Puede leer más sobre esto haciendo clic en Info (en la esquina inferior derecha del complemento)",
         "description": "Message displayed when webkit STT is not available"
     },
     "messageErrorClosebtn": {
-        "message": "[close message]",
+        "message": "[Mensaje cerrado]",
         "description": "Text for the button to close error messages"
     },
     "appTitleChatgpt": {
@@ -212,7 +212,7 @@
         "description": "The app title for Claude functionality"
     },
     "appVersion": {
-        "message": "Version",
+        "message": "Versión",
         "description": "Label for displaying the app version"
     }
 }
